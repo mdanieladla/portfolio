@@ -58,6 +58,8 @@ html{
     max-width: 768px;
     margin-left: $mb-1-5;
     margin-right: $mb-1-5;
+    display: flex;
+    justify-content: space-between;
 }
 
 .grid{
@@ -104,7 +106,7 @@ html{
 @media screen and (max-width: 767px) {
     .nav__menu{
         position: fixed;
-        bottom: 0;
+        bottom: -100%;
         left: 0;
         width: 100%;
         background-color: $body-color;
@@ -146,8 +148,14 @@ html{
     color: $first-color;
 }
 
-/* show menu */
+.nav__close:hover{
+    color: $first-color-alt;
+}
 
+/* show menu */
+.show-menu{
+    bottom: 0;
+}
 
 /* Active link */
 
