@@ -1,2 +1,86 @@
 <!--==================== HOME ====================-->
-<section class="home section" id="home"></section>
+<section class="home section" id="home">
+  <!-- div contenedor para hacer grid -->
+  <div class="home__container container grid">
+    <!-- div contenedor contenido -->
+    <div class="home__content grid">
+      <!-- div contenedor de los iconos de redes sociales -->
+      <div class="home__social">
+        <a
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/mdanielad/"
+          target="_blank"
+          class="home__social--icon"
+          ><i class="uil uil-linkedin-alt"></i
+        ></a>
+        <a
+          rel="noreferrer"
+          href="https://github.com/mdanieladla"
+          target="_blank"
+          class="home__social--icon"
+          ><i class="uil uil-github"></i
+        ></a>
+        <a
+          rel="noreferrer"
+          href="mailto:mariadanieladarnea@gmail.com"
+          target="_blank"
+          class="home__social--icon"
+          ><i class="uil uil-envelope"></i
+        ></a>
+      </div>
+      <!-- div contenedor de la imagen y el blob -->
+      <div class="home__img">
+        <svg
+          class="home__blob"
+          viewBox="0 0 200 187"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <mask id="mask0" mask-type="alpha">
+            <path
+              d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+            />
+          </mask>
+          <g mask="url(#mask0)">
+            <path
+              d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+            />
+            <image
+              class="home__blob-img"
+              x="12"
+              y="18"
+              href="./assets/images/me.jpg"
+            />
+          </g>
+        </svg>
+      </div>
+      <!-- div contenedor de la descripcion de debajo de la foto // lo primero que se ve en la web -->
+      <div class="home__data">
+        <h1 class="home__title">Hi, I'm Daniela</h1>
+        <h3 class="home__subtitle">Frontend developer</h3>
+        <p class="home__description">
+          I have experience in frontend development and some knowledge in back
+          end development
+        </p>
+        <!-- botón de color para contactarme -->
+        <a href="#contact" class="button button--flex">
+          Contact Me<i class="uil uil-message button__icon"></i>
+        </a>
+      </div>
+    </div>
+    <!-- div contenedor del raton y el texto "scroll down" para hacer scroll -->
+    <div class="home__scroll">
+      <a href="#about" class="home__scroll-button button-flex">
+        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+        <span class="home__scroll-name">Scroll down</span>
+        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+      </a>
+    </div>
+  </div>
+</section>
