@@ -34,7 +34,47 @@ function linkAction() {
   navMenu.classList.remove('show-menu');
 }
 navLink.forEach((n) => n.addEventListener('click', linkAction));
+
 /*==================== ACCORDION SKILLS ====================*/
+//Traemos elementos del HTML
+// const skillsContent = document.querySelector('.js-skills-content');
+
+// const skillsHeader = document.querySelectorAll('.js-skills-header');
+
+// function toggleSkills() {
+//   let itemClass = this.parentNode.className;
+
+//   for (itemClass = 0; itemClass < skillsContent.length; itemClass++) {
+//     skillsContent[itemClass].className = 'skills__close js-skills-content';
+//   }
+//   if (itemClass === 'skills__close js-skills-content') {
+//     this.parentNode.className = 'skills__open js-skills-content';
+//   }
+// }
+
+// skillsHeader.forEach((elemt) => {
+//   elemt.addEventListener('click', toggleSkills);
+// });
+
+//CÓDIGO IGUAL QUE EL DEL VIDEO, SE CIERRA PERO NO SE ABRE
+const skillsContent = document.getElementsByClassName('skills__content');
+
+const skillsHeader = document.querySelectorAll('.skills__header');
+
+function toggleSkills() {
+  let itemClass = this.parentNode.className;
+
+  for (itemClass = 0; itemClass < skillsContent.length; itemClass++) {
+    skillsContent[itemClass].className = 'skills__content skills__close';
+  }
+  if (itemClass === 'skills__content skills__close') {
+    this.parentNode.className = 'skills__content skills__open';
+  }
+}
+
+skillsHeader.forEach((elemt) => {
+  elemt.addEventListener('click', toggleSkills);
+});
 
 /*==================== QUALIFICATION TABS ====================*/
 
