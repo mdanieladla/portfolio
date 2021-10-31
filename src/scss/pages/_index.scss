@@ -48,23 +48,33 @@ html{
 
 
 /*==================== REUSABLE CSS CLASSES ====================*/
-.section{
+// --------------------- BEM --------------- 
+.section__general{
     padding: 2rem 0 4rem;
+    &--title{
+        font-size: $h1-font-size;
+        text-align: center;
+    }
+    &--subtitle{
+        display: block;
+        font-size: $small-font-size;
+        margin-bottom: $mb-3;
+        text-align: center;
+    }
 }
 
-.section__title{
-    font-size: $h1-font-size;
-}
-
-.section__subtitle{
-    display: block;
-    font-size: $small-font-size;
-    margin-bottom: $mb-3;
-}
-
-.section__title, .section__subtitle {
-    text-align: center;
-}
+//BORRAR AL FINAL ------ ORIGINAL SIN BEM ------
+// .section__title{
+//     font-size: $h1-font-size;
+// }
+// .section__subtitle{
+//     display: block;
+//     font-size: $small-font-size;
+//     margin-bottom: $mb-3;
+// }
+//  .section__subtitle {
+//     text-align: center;
+// } ---------------------------------------------
 
 /*==================== LAYOUT ====================*/
 .container{
