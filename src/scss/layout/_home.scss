@@ -1,66 +1,98 @@
 /*==================== HOME ====================*/
 .home__container{
     gap: 1rem;
+    @media screen and (min-width: 768px) {
+        row-gap: 5rem;
+    }
 }
 
 .home__content{
     grid-template-columns: .5fr 3fr;
     padding-top: 3.5rem;
     align-items: center;
+    @media screen and (max-width: 350px) {
+        grid-template-columns: .25fr 3fr;
+    }
+    @media screen and (min-width: 568px){
+        grid-template-columns: max-content 1fr 1fr;
+    }
+    @media screen and (min-width: 768px){
+        padding-top: 5.5rem;
+        column-gap: 2rem;
+    }
 }
 
 .home__social{
     display: grid;
     grid-template-columns: max-content;
     row-gap: 1rem;
-}
-
-//esta clase se puede poner en BEM
-.home__social-icon{
+    &--icon{
     font-size: 1.25rem;
     color: $first-color;
+    }
+    @media screen and (min-width: 1024px) {
+        transform: translateX(-6rem);
+    }
 }
 
 .home__social-icon:hover{
     color: $first-color-alt;
 }
 
+@media screen and (min-width: 568px) {
+   .home__img{
+    order: 1;
+    justify-self: center;
+} 
+}
+
 .home__blob{
     width: 200px;
     fill: $first-color;
+    @media screen and (max-width: 350px) {
+        width: 180px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 270px;
+    }
+    @media screen and (min-width: 1024px) {
+        width: 320px;
+    }
 }
 
-//MIRAR BEM??????
 .home__blob-img{
     width: 170px;
 }
 
 .home__data{
     grid-column: 1/3;
-}
-
-.home__title{
-    font-size: $big-font-size;
-}
-
-.home__subtitle{
-    font-size: $h3-font-size;
+    &--title{
+        font-size: $big-font-size;
+    }
+    &--subtitle{
+        font-size: $h3-font-size;
     color: $text-color;
     font-weight: $font-medium;
     margin-bottom: $mb-0-75;
-}
-
-.home__description{
-    margin-bottom: $mb-2;
+    }
+    &--description{
+        margin-bottom: $mb-2;
+    }
+    @media screen and (min-width: 568px) {
+        grid-column: initial;
+    }
 }
 
 .home__scroll{
     display: none;
-}
-
-.home__scroll-button{
+    &--button{
     color: $first-color;
     transition: .3s;
+    }
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin-left: 3rem;
+    }
 }
 
 .home__scroll-button:hover{
