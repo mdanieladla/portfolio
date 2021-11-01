@@ -16,6 +16,13 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
+    <!-- Fuente Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <!---->
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
@@ -138,9 +145,9 @@
             </div>
             <!-- div contenedor de la descripcion de debajo de la foto // lo primero que se ve en la web -->
             <div class="home__data">
-              <h1 class="home__title">Hi, I'm Daniela</h1>
-              <h3 class="home__subtitle">Frontend developer</h3>
-              <p class="home__description">
+              <h1 class="home__data--title">Hi, I'm Daniela</h1>
+              <h3 class="home__data--subtitle">Frontend developer</h3>
+              <p class="home__data--description">
                 A passionate <strong>Front End Developer</strong> with some knowledge
                 in back end development.
               </p>
@@ -152,7 +159,7 @@
           </div>
           <!-- div contenedor del raton y el texto "scroll down" para hacer scroll -->
           <div class="home__scroll">
-            <a href="#about" class="home__scroll-button button-flex">
+            <a href="#about" class="home__scroll--button button-flex">
               <i class="uil uil-mouse-alt home__scroll-mouse"></i>
               <span class="home__scroll-name">Scroll down</span>
               <i class="uil uil-arrow-down home__scroll-arrow"></i>
@@ -182,114 +189,98 @@
       </section>
 
       <!--==================== SKILLS ====================-->
-      <!-- ---------------- BEM -------------------  -->
       <section class="skills section__general" id="skills">
         <h2 class="section__general--title">Skills</h2>
         <span class="section__general--subtitle">My technical level</span>
-        <!-- ------------- PASAR A BEM ------------- -->
         <div class="skills__container container grid">
-          <div>
-            <!--==================== SKILLS 1====================-->
-            <div class="skills__content skills__open js-skills">
-              <div class="skills__header js-skills-header">
-                <i class="uil uil-brackets-curly skills__icon"></i>
-                <!-- ESTE DIV SE PUEDE BORRAR???? -->
-                <div>
-                  <h1 class="skills__title">Frontend developer</h1>
-                  <span class="skills__subtitle">More than 3 months</span>
-                </div>
-                <i class="uil uil-angle-down skills__arrow"></i>
+          <!--==================== SKILLS 1====================-->
+          <div class="skills__content skills__open js-skills">
+            <div class="skills__content--header js-skills-header">
+              <i class="uil uil-brackets-curly skillsIcon"></i>
+              <h1 class="skillsTitle">Frontend developer</h1>
+              <i class="uil uil-angle-down skillsArrow"></i>
+            </div>
+            <div class="skills__list grid-skills">
+              <div class="skills__data">
+                <h3 class="skills__data--name">
+                  <i class="uil uil-html5" title="html5"></i>
+                </h3>
               </div>
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">HTML</h3>
-                    <!-- ESTO CREO QUE LO BORRO -->
-                    <span class="skills__number">90%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__html"></span>
-                  </div>
-                </div>
-                <!-- BORRAR? -->
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">CSS</h3>
-                    <!-- ESTO CREO QUE LO BORRO -->
-                    <span class="skills__number">90%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__css"></span>
-                  </div>
-                </div>
-                <!-- BORRAR? -->
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">JS</h3>
-                    <!-- ESTO CREO QUE LO BORRO -->
-                    <span class="skills__number">90%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__js"></span>
-                  </div>
-                </div>
-                <!-- BORRARR?? -->
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">REACT</h3>
-                    <!-- ESTO CREO QUE LO BORRO -->
-                    <span class="skills__number">90%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__react"></span>
-                  </div>
-                </div>
+              <div class="skills__data">
+                <h3 class="skills__data--name">
+                  <i class="fab fa-css3-alt" title="css3"></i>
+                </h3>
+              </div>
+              <div class="skills__data">
+                <h3 class="skills__data--name">
+                  <i class="fab fa-sass" title="sass"></i>
+                </h3>
+              </div>
+              <div class="skills__data">
+                <h3 class="skills__data--name">
+                  <i class="fab fa-npm" title="Npm"></i>
+                </h3>
+              </div>
+              <div class="skills__data">
+                <h3 class="skills__data--name">
+                  <i class="fab fa-js-square" title="javascript"></i>
+                </h3>
+              </div>
+              <div class="skills__data">
+                <h3 class="skills__data--name"><i class="uil uil-react"></i></h3>
               </div>
             </div>
-            <!-- ==================== SKILLS 2==================== BORRAR??? -->
-            <div class="skills__content skills__close js-skills">
-              <div class="skills__header js-skills-header">
-                <i class="uil uil-server-network skills__icon"></i>
-                <!-- ESTE DIV SE PUEDE BORRAR???? -->
-                <div>
-                  <h1 class="skills__title">Backend developer</h1>
-                  <span class="skills__subtitle">More than 3 months</span>
-                </div>
-                <i class="uil uil-angle-down skills__arrow"></i>
+          </div>
+          <!-- ==================== SKILLS 2==================== -->
+          <!-- <div class="skills__content skills__close js-skills"> VOLVER A PONER EL SKILLS__CLOSE CUANDO LO HAGA FUNCIONAR EN JS -->
+          <div class="skills__content js-skills">
+            <div class="skills__content--header js-skills-header">
+              <i class="uil uil-server-network skillsIcon"></i>
+              <h1 class="skillsTitle">Backend developer</h1>
+              <i class="uil uil-angle-down skillsArrow"></i>
+            </div>
+            <div class="skills__list grid-skills">
+              <div class="skills__data">
+                <h3 class="skills__data--name">
+                  <i class="fab fa-node" title="Node Js"></i>
+                </h3>
               </div>
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">NODE JS</h3>
-                    <!-- ESTO CREO QUE LO BORRO -->
-                    <span class="skills__number">90%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__nodejs"></span>
-                  </div>
-                </div>
-                <!-- BORRAR? -->
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">EXPRESS</h3>
-                    <!-- ESTO CREO QUE LO BORRO -->
-                    <span class="skills__number">90%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__express"></span>
-                  </div>
-                </div>
-                <!-- BORRAR? -->
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">SQL</h3>
-                    <!-- ESTO CREO QUE LO BORRO -->
-                    <span class="skills__number">90%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__sql"></span>
-                  </div>
-                </div>
+              <!-- <div class="skills__data">
+                <h3 class="skills__data--name">EXPRESS</h3>
+              </div> -->
+              <div class="skills__data">
+                <h3 class="skills__data--name"><i class="uil uil-database"></i></h3>
+              </div>
+            </div>
+          </div>
+          <!--==================== SKILLS 3====================-->
+          <!-- <div class="skills__content skills__close js-skills"> VOLVER A PONER EL SKILLS__CLOSE CUANDO LO HAGA FUNCIONAR EN JS -->
+          <div class="skills__content js-skills">
+            <div class="skills__content--header js-skills-header">
+              <i class="uil uil-sitemap skillsIcon"></i>
+              <h1 class="skillsTitle">Other tools</h1>
+              <i class="uil uil-angle-down skillsArrow"></i>
+            </div>
+            <div class="skills__list grid-skills">
+              <div class="skills__data">
+                <h3 class="skills__data--name">
+                  <i class="fab fa-git-alt" title="Git"></i>
+                </h3>
+              </div>
+              <div class="skills__data">
+                <h3 class="skills__data--name">
+                  <i class="fab fa-github" title="Github"></i>
+                </h3>
+              </div>
+              <div class="skills__data">
+                <h3 class="skills__data--name">
+                  <i class="fab fa-slack" title="Slack"></i>
+                </h3>
+              </div>
+              <div class="skills__data">
+                <h3 class="skills__data--name">
+                  <i class="fas fa-terminal" title="Terminal"></i>
+                </h3>
               </div>
             </div>
           </div>
@@ -373,6 +364,61 @@
                 <!-- repo¿? -->
               </div>
             </div>
+            <!--==================== PORTFOLIO 1 grupo====================-->
+            <div class="portfolio__content grid">
+              <img
+                src="./assets/images/portfolio2G.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Group project...</h3>
+                <p class="portfolio__description">Group project...</p>
+                <a
+                  href="http://beta.adalab.es/project-promo-n-module-1-team-7/"
+                  class="button button--flex button--small portfolio__button"
+                  target="_blank"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <!-- repo¿? -->
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 2 grupo====================-->
+            <div class="portfolio__content grid">
+              <img src="./assets/images/try.jpg" alt="" class="portfolio__img" />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Group project...</h3>
+                <p class="portfolio__description">Group project...</p>
+                <a
+                  href="http://beta.adalab.es/project-promo-n-module-2-team-7/"
+                  class="button button--flex button--small portfolio__button"
+                  target="_blank"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <!-- repo¿? -->
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 3 grupo====================-->
+            <div class="portfolio__content grid">
+              <img src="./assets/images/try2.jpg" alt="" class="portfolio__img" />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Group project...</h3>
+                <p class="portfolio__description">Group project...</p>
+                <a
+                  href="https://servidor-as-profile-cards.herokuapp.com/index.html#/"
+                  class="button button--flex button--small portfolio__button"
+                  target="_blank"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <!-- repo¿? -->
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -440,6 +486,7 @@
       <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
