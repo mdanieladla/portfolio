@@ -110,6 +110,7 @@ function scrollUp() {
 window.addEventListener('scroll', scrollUp);
 
 /*==================== DARK LIGHT THEME ====================*/
+// FUNCIONA PERO NO ME COGE LAS VARIABLES DEL SASS ....... ¿DEJARLO O NO DEJARLO?
 const themeButton = document.getElementById('theme-button');
 const darkTheme = 'dark-theme';
 const iconTheme = 'uil-sun';
@@ -144,3 +145,30 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-theme', getCurrentTheme());
   localStorage.setItem('selected-icon', getCurrentIcon());
 });
+
+//scroll reveal animation
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '80px',
+  duration: 2000,
+  reset: true,
+});
+
+/*SCROLL HOME*/
+sr.reveal('.home__title', {});
+sr.reveal('.button', { delay: 200 });
+sr.reveal('.home__img', { delay: 400 });
+sr.reveal('.home__social--icon', { interval: 200 });
+
+/*SCROLL ABOUT*/
+sr.reveal('.about__img', {});
+sr.reveal('.about__subtitle', { delay: 200 });
+sr.reveal('.about__description', { delay: 400 });
+
+/*SCROLL SKILLS*/
+sr.reveal('.section__general--title', {});
+sr.reveal('.section__general--subtitle', { delay: 200 });
+sr.reveal('.skills__data', { interval: 200 });
+
+/*SCROLL PORTFOLIO*/
+sr.reveal('.portfolio__img', { interval: 200 });
