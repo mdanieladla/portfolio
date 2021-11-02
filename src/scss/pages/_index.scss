@@ -28,19 +28,6 @@ html{
     height: auto;
   }
 
-
-/*========== Variables Dark theme ==========*/
-body.dark-theme{
-    background-color: lightgrey;
-    /* HSL color mode */
-    $first-color-second: hsl($hue-color, 30%, 8%);
-    $title-color: hsl($hue-color, 8%, 95%);
-    $text-color: hsl($hue-color, 8%, 75%);
-    $input-color: hsl($hue-color, 29%, 16%);
-    $body-color: hsl($hue-color, 28%, 12%);
-    $container-color: hsl($hue-color, 29%, 16%);
-}
-
 /*========== Button Dark/Light ==========*/
 .nav__btns{
     display: flex;
@@ -58,11 +45,7 @@ body.dark-theme{
     color: $first-color;
 }
 
-/*==================== BASE ====================*/
-
-
 /*==================== REUSABLE CSS CLASSES ====================*/
-// --------------------- BEM --------------- 
 .section__general{
     padding: 2rem 0 4rem;
     &--title{
@@ -98,124 +81,6 @@ body.dark-theme{
     left: 0;
     z-index: $z-fixed;
     background-color: $body-color;
-}
-
-/*==================== NAV ====================*/ /*CAMBIAR AL SCSS DE HEADER*/
-.nav{
-    max-width: 968px;
-    height: $header-height;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav__logo, .nav__toggle{
-    color: $title-color;
-    font-weight: $font-medium;
-}
-
-.nav__logo:hover{
-    color: $first-color;
-}
-
-.nav__toggle{
-    font-size: 1.1rem;
-    cursor: pointer;
-}
-
-.nav__toggle:hover{
-    color: $first-color;
-}
-
-@media screen and (max-width: 767px) {
-    .nav__menu{
-        position: fixed;
-        bottom: -100%;
-        left: 0;
-        width: 100%;
-        background-color: $body-color;
-        padding: 2rem 1.5rem 4rem;
-        box-shadow: 0 -1px 4px rgba(0,0,0, 0.15);
-        border-radius: 1.5rem 1.5rem 0 0;
-        transition: .3s;
-    }
-}
-
-.nav__list{
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-
-.nav__link{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: $small-font-size;
-    color: $title-color;
-    font-weight: $font-medium;
-}
-
-.nav__link:hover{
-    color: $first-color;
-}
-
-.nav__icon{
-    font-size: 1.2rem;
-}
-
-.nav__close{
-    position: absolute;
-    right: 1.3rem;
-    bottom: .5rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: $first-color;
-}
-
-.nav__close:hover{
-    color: $first-color-alt;
-}
-
-/* show menu */
-.show-menu{
-    bottom: 0;
-}
-
-/* Active link */
-.active-link{
-    color: $first-color;
-}
-
-/* Change background header */
-.scroll-header{
-    box-shadow: 0 -1px 4px rgba(0,0,0, 0.15);
-}
-
-/*========== SCROLL UP ==========*/
-.scrollUp{
-    position: fixed;
-    right: 1rem;
-    bottom: -20%;
-    background-color: $first-color;
-    opacity: .8;
-    padding: 0 .3rem;
-    border-radius: .4rem;
-    z-index: $z-tooltip;
-    transition: .4s;
-}
-
-.scrollUp:hover{
-    background-color: $first-color-alt;
-}
-
-.scrollup__icon{
-    font-size: 1.5rem;
-    color: #fff;
-}
-
-/* Show scroll */
-.show-scroll{
-    bottom: 5rem;
 }
 
 /*==================== MEDIA QUERIES ====================*/
