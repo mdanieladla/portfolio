@@ -37,34 +37,26 @@ navLink.forEach((n) => n.addEventListener('click', linkAction));
 
 /*==================== ACCORDION SKILLS ====================*/
 //Traemos elementos del HTML
-// const skillsContent = document.querySelectorAll('.js-skills');
+const skillsContent = document.querySelectorAll('.js-skills');
 
-// const skillsHeader = document.querySelectorAll('.js-skills-header');
+const skillsHeader = document.querySelectorAll('.js-skills-header');
 
-// function toggleSkills(ev) {
-//   let itemClass = ev.currentTarget;
-//   // console.log(itemClass);
-//   const clicked = itemClass.parentNode;
-//   for (let index = 0; index < skillsHeader.length; index++) {
-//     if (itemClass === skillsHeader[index]) {
-//       skillsContent[index].classList.toggle('skills__close');
-//       skillsHeader[index].classList.toggle('skills__header');
-//     } else {
-//       skillsContent[index].classList.add('skills__open');
-//     }
-//   }
-// }
+//función para que se añada y quite la clase correspondiente para el colapsable
+function toggleSkills() {
+  let itemClass = this.parentNode.className; //itemClass hace referencia a donde hacemos click, en este caso es: skills__content skills__open js-skills.
+  for (let index = 0; index < skillsContent.length; index++) {
+    skillsContent[index].className = 'skills__content skills__close js-skills';
+  }
+  if (itemClass === 'skills__content skills__close js-skills') {
+    this.parentNode.className = 'skills__content skills__open js-skills';
+  }
+}
 
-// for (const item of skillsHeader) {
-//   item.addEventListener('click', toggleSkills);
-// }
-//    NO FUNCIONAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA    //
-
-/*==================== SERVICES MODAL ====================*/
+skillsHeader.forEach((elmt) => {
+  elmt.addEventListener('click', toggleSkills);
+});
 
 /*==================== PORTFOLIO SWIPER  ====================*/
-
-/*==================== TESTIMONIAL ====================*/
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 //Con esto hacemos que en el menú se quede sombreado en color morado claro la sección en que estamos.
