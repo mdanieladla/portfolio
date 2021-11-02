@@ -138,7 +138,7 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-icon', getCurrentIcon());
 });
 
-//scroll reveal animation
+/*==================== scroll reveal animation  ====================*/
 const sr = ScrollReveal({
   origin: 'top',
   distance: '80px',
