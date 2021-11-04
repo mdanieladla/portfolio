@@ -17,6 +17,9 @@
 }
 
 .skillsTitle{
+    @media screen and (max-width:350px) {
+        font-size: $normal-font-size;
+    }
     display: flex;
     justify-content: space-between;
     margin-bottom: $mb-0-5;
