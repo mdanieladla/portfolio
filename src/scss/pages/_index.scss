@@ -3,7 +3,6 @@ html{
   }
   
   body{
-    //margin: 0 0 $header-height 0;
     font-family: $body-font;
     font-size: $normal-font-size;
     background-color: $body-color;
@@ -83,7 +82,7 @@ html{
     background-color: $body-color;
 }
 
-/*==================== MEDIA QUERIES ====================*/
+/*==================== MEDIA QUERIES COMUNES ====================*/
 /* For small devices */
 @media screen and (max-width: 350px) {
     .container{
@@ -91,20 +90,8 @@ html{
         margin-right: $mb-1;
     }
 
-    .nav__menu{
-        padding: 2rem .25rem 4rem;
-    }
-
     .nav__list{
         column-gap: 0;
-    }
-
-    .skills_title{
-        font-size: $normal-font-size;
-    }
-
-    .portfolio__img{
-        width: 200px;
     }
 }
 
@@ -125,7 +112,7 @@ html{
         padding: 6rem 0 2rem;
     }
 
-    .section__subtitle{
+    .section__general--subtitle{
         margin-bottom: 4rem;
     }
 
@@ -143,17 +130,9 @@ html{
         column-gap: 1.5rem;
     }
 
-    .nav__icon, .nav__close, .nav__toggle{
-        display: none;
-    }
-
     .nav__list{
         display: flex;
         column-gap: 2rem;
-    }
-
-    .nav__menu{
-        margin-left: auto;
     }
 
     .change-theme{
@@ -164,37 +143,12 @@ html{
         column-gap: 5rem;
     }
 
-    .about__img{ 
-        width: 350px;
-    }
-
-    .about__description{
-        text-align: initial;
-    }
-
-   .portfolio__img{
-       width: 320px;
-   }
-
    .portfolio__content{
        align-items: center;
    }
 
    .footer__container{
        grid-template-columns: repeat(3, 1fr);
-   }
-
-   .footer__bg{
-       padding: 3rem 0 3.5rem;
-   }
-
-   .footer__links{
-       flex-direction: row;
-       column-gap: 2rem;
-   }
-
-   .footer__copy{
-    margin-top: 4.5rem;
    }
 }
 
