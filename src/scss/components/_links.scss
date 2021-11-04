@@ -1,9 +1,11 @@
-.link__adalab:hover {
-  background-color: #099d8d;
-  color: #fff;
+.contact__title{
+  color: $first-color;
 }
 
-.link__github:hover {
-  background-color: #CCC;
-  color: #000;
+.contact__title:visited{
+  color: $first-color-alt;
+}
+
+.contact__title:hover{
+  color: hsl($hue-color, 70%, 40%);
 }
