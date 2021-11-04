@@ -19,6 +19,9 @@
 .nav__toggle{
     font-size: 1.1rem;
     cursor: pointer;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .nav__toggle:hover{
@@ -65,6 +68,9 @@
 
 .nav__icon{
     font-size: 1.2rem;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .nav__close{
@@ -74,6 +80,9 @@
     font-size: 1.5rem;
     cursor: pointer;
     color: $first-color;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .nav__close:hover{
