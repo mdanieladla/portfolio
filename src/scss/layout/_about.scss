@@ -10,34 +10,3 @@
     text-align: center;
     margin-bottom: $mb-2-5;
 }
-
-//ESTAs CLASEs CREO QUE LUEGO SE PUEDE BORRAR PORQUE SON LOS AÑOS DE EXPRIENCIA PROYECTOS Y TAL QUE YO NO VOY A PONER.
-.about__info{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: $mb-2-5;
-}
-
-//esta
-.about__info-title{
-    font-size: $h2-font-size;
-    font-weight: $font-semi-bold;
-    color: $title-color;
-}
-
-//esta
-.about__info-name{
-    font-size: $small-font-size;
-}
-
-//esta
-.about__info-title, .about__info-name{
-    display: block;
-    text-align: center;
-}
-
-//esta ¿?
-.about__buttons{
-    display: flex;
-    justify-content: center;
-}
