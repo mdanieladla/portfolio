@@ -8,10 +8,16 @@
 }
 
 .portfolio__img{
+    @media screen and (max-width: 350px) {
+            width: 200px;
+    }
     width: 265px;
     border-radius: .5rem;
     justify-self: center;
     margin-top: .5rem;
+    @media screen and (min-width:768px) {
+        width: 320px;
+    }
 }
 
 .portfolio__title{
