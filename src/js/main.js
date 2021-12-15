@@ -102,7 +102,7 @@ function scrollUp() {
 window.addEventListener('scroll', scrollUp);
 
 /*==================== DARK LIGHT THEME ====================*/
-// FUNCIONA PERO NO ME COGE LAS VARIABLES DEL SASS ....... ¿DEJARLO O NO DEJARLO?
+// FUNCIONA PERO NO ME COGE LAS VARIABLES DEL SASS .......
 const themeButton = document.getElementById('theme-button');
 const darkTheme = 'dark-theme';
 const iconTheme = 'uil-sun';
