@@ -1,10 +1,17 @@
 /*==================== PORTFOLIO ====================*/
 .portfolio__container{
     overflow: initial;
+    padding: 0 1.5rem;
+   
 }
 
-.portfolio__container{
-    padding: 0 1.5rem;
+
+.grid-projects{
+ @media all and (min-width:1024px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+    }
 }
 
 .portfolio__img{
