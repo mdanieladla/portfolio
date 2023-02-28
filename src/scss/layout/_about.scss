@@ -10,10 +10,12 @@
 }
 
 .about__description{
-    text-align: center;
+    text-align: justify; 
+    text-justify: inter-word;
     margin-bottom: $mb-2-5;
     @media screen and (min-width:768px) {
-        text-align: initial;
+        text-align: justify;
+        margin-bottom: 0;
     }
 }
 
